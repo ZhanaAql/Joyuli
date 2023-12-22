@@ -1,0 +1,136 @@
+:root {
+  --grey: #7f8487;
+  --bg: #0a0a0a;
+  --shadow: 02px 2px rgb(0 0 0/0.5);
+  --space: 65vh;
+}
+
+body {
+  font-size: 1.2 rem;
+  font-family: "Heebo", sans-serif;
+  min-height: 2000px;
+}
+
+.hero ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/hero-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  filter: grayscale();
+  animation: change 10s infinite;
+}
+.hero {
+  min-height: 100vh;
+  position: relative;
+}
+
+.elementor-space {
+  height: var(--space);
+}
+.hero h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+}
+.hero p {
+  font-size: 1rem;
+}
+
+.hero h4 {
+  font-size: 1.4rem;
+}
+
+.hero a {
+  color: black;
+  background-color: white;
+}
+.hero a:hover {
+  color: white;
+  background-color: var(--grey);
+}
+
+.quote ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(5, 5, 5, 0.5)),
+    url(img/quote-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+}
+.quote {
+  min-height: 100vh;
+  position: relative;
+}
+
+.quote h4 {
+  font-size: 2rem;
+}
+
+.quote h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+}
+
+.quote h6 {
+  font-size: 1.2rem;
+}
+
+.quote h5 {
+  text-decoration: underline;
+}
+
+/* media query */
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+}
+/* mobilephone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@keyframes change {
+  0% {
+    background-image: url(img/hero-6.jpg);
+  }
+  20% {
+    background-image: url(img/hero-7.jpg);
+  }
+  40% {
+    background-image: url(img/hero-8.jpg);
+  }
+  60% {
+    background-image: url(img/hero-9.jpg);
+  }
+  80% {
+    background-image: url(img/hero-1.jpg);
+  }
+  100% {
+    background-image: url(img/hero.jpg);
+  }
+}
