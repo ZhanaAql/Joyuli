@@ -139,7 +139,7 @@ body {
   text-align: center;
 }
 .home .couple h2 {
-  margin-top: 3.5rem;
+  margin-top: 2rem;
   font-size: 2rem;
   font-family: "Dancing Script", cursive;
 }
@@ -308,7 +308,7 @@ body {
 
 .countdown .container {
   padding: 20px;
-  padding-top: 8rem;
+  padding-top: 10rem;
 }
 /* .countdown h1::before {
   display: block;
@@ -321,7 +321,7 @@ body {
 
 .simply-container {
   margin: 10px;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .countdown h1 {
