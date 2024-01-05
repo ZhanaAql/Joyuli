@@ -88,6 +88,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
   z-index: -1;
 }
 .quote {
@@ -139,6 +140,7 @@ body {
   text-align: center;
 }
 .home .couple h2 {
+  margin-top: 3.5rem;
   font-size: 2rem;
   font-family: "Dancing Script", cursive;
 }
@@ -192,10 +194,11 @@ body {
 }
 
 .event {
-  background-image: url(img/hero-6.jpg);
+  background-image: url(img/hero-6.JPG);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
   display: flex;
 }
 
@@ -307,7 +310,7 @@ body {
 
 .countdown .container {
   padding: 20px;
-  padding-top: 10rem;
+  padding-top: 8rem;
 }
 /* .countdown h1::before {
   display: block;
@@ -320,7 +323,7 @@ body {
 
 .simply-container {
   margin: 10px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .countdown h1 {
@@ -401,11 +404,6 @@ body {
   width: 30%;
 }
 
-/* .wish .guestForm input:focus,
-  .wish .guestForm textarea:focus {
-    border-color: skyblue !important;
-  } */
-
 .wish button {
   padding: 0.5rem;
   background-color: black;
@@ -420,6 +418,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  -webkit-background-attachment: fixed;
   color: white;
 }
 
@@ -623,13 +622,13 @@ body {
   }
 
   .event .row {
-    display: block; /* Mengubah menjadi tata letak blok */
+    display: block; 
     margin: 2rem;
   }
 
   .event .column {
-    width: 100%; /* Mengisi lebar layar penuh */
-    margin-bottom: 20px; /* Memberikan jarak antar kolom */
+    width: 100%; 
+    margin-bottom: 20px;
   }
 
   .image-container {
@@ -660,10 +659,3 @@ body {
     text-align: center;
   }
 }
-
-@supports (-webkit-touch-callout: none) {
-  .quote .event .footer {
-    background-attachment: scroll;
-  }
-}
-
