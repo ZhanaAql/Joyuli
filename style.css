@@ -660,3 +660,10 @@ body {
     text-align: center;
   }
 }
+
+@supports (-webkit-touch-callout: none) {
+  .quote .event .footer {
+    background-attachment: scroll;
+  }
+}
+
